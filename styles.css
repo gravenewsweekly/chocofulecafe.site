@@ -1,421 +1,600 @@
 /* styles.css */
 
-/* Reset default styles for consistency */
+/* Reset default styles for consistency (keep this modern for good practice) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base styles */
+/* Base styles - 90s Aesthetic */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f3eb; /* Light cream background for warmth */
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font for the 90s */
+    line-height: 1.5; /* Slightly tighter line-height */
+    color: #000000; /* Pure black text */
+    background-color: #C0C0C0; /* Standard Windows 95 gray */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="10" height="10" fill="%23C0C0C0"/><rect x="0" y="0" width="5" height="5" fill="%23A0A0A0"/><rect x="5" y="5" width="5" height="5" fill="%23A0A0A0"/></svg>'); /* Subtle grainy/stipple background pattern */
+    background-repeat: repeat;
+    -webkit-font-smoothing: none; /* No font smoothing for a pixelated feel */
+    -moz-osx-font-smoothing: grayscale; /* No font smoothing for a pixelated feel */
 }
 
-/* Container for consistent width */
+/* Container for consistent width - Narrower for true 90s feel */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 760px; /* Common 90s fixed width, designed for 800x600 monitors */
+    margin: 20px auto; /* Add some top/bottom margin */
+    padding: 10px; /* Minimal padding */
+    border: 2px solid #000000; /* Harsh black border */
+    background-color: #FFFFFF; /* White content area */
+    box-shadow: none; /* No modern shadows */
 }
 
-/* Header */
+/* Header - Bold and basic */
 header {
-    background-color: #3c2f2f; /* Rich chocolate brown */
-    color: #fff;
-    padding: 1.5rem 0;
+    background-color: #000080; /* Dark blue, reminiscent of Windows title bars */
+    color: #FFFFFF;
+    padding: 10px; /* Smaller padding */
     text-align: center;
+    border-bottom: 2px solid #000000; /* Strong border */
+    box-shadow: none; /* No shadows */
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-family: 'Verdana', sans-serif; /* Common 90s sans-serif font */
+    font-size: 26px; /* A bit smaller */
+    font-weight: bold;
+    margin-bottom: 0; /* No margin here */
+    text-shadow: 2px 2px #333333; /* Classic text shadow */
 }
 
 header .tagline {
-    font-size: 1.1rem;
-    font-style: italic;
-    opacity: 0.9;
+    font-size: 13px; /* Smaller */
+    font-style: normal; /* No italics */
+    opacity: 1; /* Full opacity */
+    color: #FFFF00; /* Bright yellow for contrast */
 }
 
-/* Navigation */
+/* Navigation - Functional and stark */
 nav {
-    background-color: #5c4033; /* Slightly lighter brown */
-    padding: 1rem 0;
+    background-color: #808080; /* Medium gray */
+    padding: 5px 0; /* Minimal padding */
+    text-align: left; /* Left align for typical 90s nav */
+    border-bottom: 1px solid #000000; /* Thin black border */
+    border-top: 1px solid #FFFFFF; /* White top border for 3D effect */
+    box-shadow: none;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    padding-left: 10px; /* Indent nav items slightly */
 }
 
 nav ul li {
-    margin: 0;
+    display: inline; /* Keep inline for a compact menu */
+    margin: 0 10px; /* Smaller margin */
+    border-right: 1px solid #000000; /* Vertical separator lines */
+    padding-right: 10px;
+}
+nav ul li:last-child {
+    border-right: none; /* No separator on the last item */
 }
 
+
 nav ul li a {
-    color: #fff;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-size: 13px; /* Smaller font */
+    padding-bottom: 0;
+    background-color: transparent; /* No background */
+    border: none; /* No borders */
+    text-transform: uppercase; /* All caps navigation */
+    transition: none; /* No transitions */
 }
 
 nav ul li a:hover,
 nav ul li a[aria-current="page"] {
-    color: #e6b800; /* Golden accent for hover and active page */
+    color: #FFFF00; /* Bright yellow on hover */
+    text-decoration: underline; /* Standard underline */
+    border-bottom: none; /* No border-bottom */
 }
 
 /* Main content */
 main {
-    padding: 2rem 0;
+    padding: 15px 10px; /* Minimal padding */
 }
 
-/* Hero section */
+/* Hero section - Simple and direct */
 .hero, .careers-hero, .about-hero, .contact-intro {
     text-align: center;
-    padding: 3rem 0;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px; /* Smaller padding */
+    background-color: #FFFFFF;
+    margin-bottom: 15px; /* Standard margin */
+    border: 1px dashed #FF0000; /* Red dashed border - very 90s! */
+    box-shadow: none;
+    border-radius: 0; /* No rounded corners */
 }
 
 .hero h2, .careers-hero h2, .about-hero h2, .contact-intro h2 {
-    font-size: 2.2rem;
-    color: #3c2f2f;
-    margin-bottom: 1rem;
+    font-size: 20px;
+    color: #000080; /* Dark blue heading */
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive; /* Iconic 90s font */
 }
 
 .hero p, .careers-hero p, .about-hero p, .contact-intro p {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 14px;
+    color: #333333;
 }
 
-/* CTA Button */
+/* CTA Button - Bold and clickable */
 .cta-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #e6b800;
-    color: #3c2f2f;
+    padding: 5px 10px; /* Smaller padding */
+    background-color: #008000; /* Green button */
+    color: #FFFFFF;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px outset #CCCCCC; /* Classic 3D button effect */
+    margin-top: 10px;
+    border-radius: 0;
+    transition: none; /* No transitions */
 }
 
 .cta-button:hover {
-    background-color: #d4a300;
+    background-color: #006400; /* Darker green on hover */
+    color: #FFFFFF;
+    border-style: inset; /* Inset for pressed look */
+    transform: none; /* No transform */
 }
+.cta-button:active {
+    transform: none;
+}
+
 
 /* Sections */
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 25px; /* Standard margin */
 }
 
 h3 {
-    font-size: 1.8rem;
-    color: #3c2f2f;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 18px;
+    color: #000080;
+    margin-bottom: 10px;
+    text-align: left; /* Default to left align */
+    position: relative;
+    padding-bottom: 0; /* Remove modern padding */
+    font-family: 'Verdana', sans-serif;
+}
+
+h3::after { /* No modern underline */
+    content: none;
 }
 
 p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px; /* Slightly tighter paragraphs */
 }
 
 /* Menu page */
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 15px;
+    display: block; /* Stack items by default for 90s feel, responsive handled by media queries */
+    gap: 0; /* No grid gap */
 }
 
 .menu-item {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #EEEEEE; /* Lighter gray for item background */
+    padding: 10px;
+    margin-bottom: 10px; /* Tighter spacing */
+    text-align: left; /* Left align content */
+    border: 1px solid #000000; /* Harsh black border */
+    box-shadow: none;
+    border-radius: 0;
+    transition: none;
+}
+
+.menu-item:hover {
+    background-color: #D0D0D0; /* Simple hover effect */
+    transform: none;
+    box-shadow: none;
 }
 
 .menu-item img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    height: 100px; /* Smaller image height */
+    object-fit: contain; /* Contain for pixelated look, or cover for full fill */
+    margin-bottom: 8px;
+    border: 1px dotted #000000; /* Dotted border for images */
+    border-radius: 0;
+    image-rendering: pixelated; /* Enhance pixelation for images (modern browsers) */
+    outline: 2px solid #FF00FF; /* Classic garish magenta outline */
 }
 
 .menu-item h4 {
-    font-size: 1.4rem;
-    color: #3c2f2f;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: 'Arial', Helvetica, sans-serif;
 }
 
 .menu-item .description {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 12px;
+    color: #555555;
 }
 
 .menu-item .price {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #e6b800;
-    margin-top: 0.5rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF0000; /* Bright red price */
+    margin-top: 5px;
 }
 
 /* Contact page */
 .contact-methods {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 15px;
 }
 
 .contact-info address, .contact-info p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
 }
 
 .contact-form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #EEEEEE;
+    padding: 15px;
+    border: 1px solid #000000;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .form-group label {
     display: block;
-    font-size: 1rem;
-    color: #3c2f2f;
-    margin-bottom: 0.5rem;
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 3px;
+    font-weight: normal; /* Labels not bold */
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 5px; /* Minimal padding */
+    border: 1px solid #000000; /* Harsh black border */
+    font-size: 13px;
+    font-family: 'Arial', Helvetica, sans-serif; /* Keep generic for inputs */
+    border-radius: 0;
+    transition: none;
+    background-color: #FFFFFF; /* White input background */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #FF00FF; /* Bright magenta on focus */
+    outline: none;
+    box-shadow: none;
 }
 
 .form-group textarea {
-    resize: vertical;
+    height: 100px; /* Shorter textarea */
+    resize: none; /* No resizing */
 }
 
 .form-group input[type="checkbox"] {
     width: auto;
-    margin-right: 0.5rem;
+    margin-right: 5px;
 }
 
 button[type="submit"] {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #e6b800;
-    color: #3c2f2f;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600;
+    padding: 6px 12px; /* Smaller button */
+    background-color: #008000;
+    color: #FFFFFF;
+    border: 2px outset #CCCCCC;
+    font-size: 13px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 0;
+    transition: none;
 }
 
 button[type="submit"]:hover {
-    background-color: #d4a300;
+    background-color: #006400;
+    color: #FFFFFF;
+    border-style: inset;
+    transform: none;
+}
+button[type="submit"]:active {
+    transform: none;
 }
 
-/* Map */
+
+/* Map - If you must have one, keep it basic */
 .map iframe {
     width: 100%;
-    border-radius: 8px;
+    height: 200px; /* Smaller map */
+    border: 2px solid #000000;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* Careers page */
 .job-listings {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    margin-top: 15px;
 }
 
 .job {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .job h4 {
-    font-size: 1.4rem;
-    color: #3c2f2f;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
 .job p, .job ul {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 13px;
+    color: #333333;
 }
 
 .job ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
+    list-style: circle; /* Use basic circle bullets */
+    margin-left: 20px;
+    margin-bottom: 8px;
 }
 
 .process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 15px;
+    display: block; /* Stack by default */
+    gap: 0;
 }
 
 .step {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: center;
+    border: 1px solid #000000;
+    box-shadow: none;
+    border-radius: 0;
+    transition: none;
+}
+
+.step:hover {
+    background-color: #D0D0D0;
+    transform: none;
+    box-shadow: none;
 }
 
 /* About page */
 .story-content, .facility-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
 .story-image, .facility-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
+    height: 150px; /* Smaller images */
+    object-fit: cover; /* Cover is fine, but pixelated look is key */
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    box-shadow: none;
+    image-rendering: pixelated; /* Ensure pixelation */
 }
 
 .values-grid, .team-members, .milestones-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    margin-top: 15px;
+    display: block; /* Stack by default */
+    gap: 0;
 }
 
 .value-card, .team-member, .milestone {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: center;
+    border: 1px solid #000000;
+    box-shadow: none;
+    border-radius: 0;
+    transition: none;
+}
+
+.value-card:hover, .team-member:hover, .milestone:hover {
+    background-color: #D0D0D0;
+    transform: none;
+    box-shadow: none;
 }
 
 .team-photo {
-    width: 150px;
-    height: 150px;
+    width: 80px; /* Smaller photo */
+    height: 80px;
+    border-radius: 0;
+    margin-bottom: 8px;
+    border: 1px solid #000000;
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+    image-rendering: pixelated;
 }
 
 .position {
-    font-size: 1rem;
-    color: #e6b800;
-    font-weight: 600;
+    font-size: 13px;
+    color: #800080; /* Purple for roles */
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 /* FAQ and Testimonials */
 .faq-item, .testimonial {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    box-shadow: none;
+    border-radius: 0;
 }
 
-.faq-item h4, .testimonial p {
-    font-size: 1.2rem;
-    color: #3c2f2f;
+.faq-item h4 {
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
-/* Footer */
+.testimonial p {
+    font-size: 14px;
+    color: #333333;
+    font-style: normal; /* No italics */
+}
+.testimonial .author {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000080;
+}
+
+
+/* Footer - Simple and copyright-focused */
 footer {
-    background-color: #3c2f2f;
-    color: #fff;
-    padding: 2rem 0;
+    background-color: #808080;
+    color: #000000; /* Black text on gray */
+    padding: 10px 0;
     text-align: center;
+    border-top: 2px solid #000000;
+    box-shadow: none;
 }
 
 footer p {
-    font-size: 0.9rem;
-    color: #ddd;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
 .social-links a {
-    color: #e6b800;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
+    color: #0000FF; /* Standard blue link color */
+    text-decoration: underline; /* Always underlined */
+    font-size: 12px;
+    margin: 0 8px;
+    transition: none;
 }
 
 .social-links a:hover {
-    color: #d4a300;
+    color: #800080; /* Purple visited link color */
+    transform: none;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+/* --- 90s Special Effects --- */
+
+/* Blinking Text (Use sparingly for impact!) */
+.blink {
+    animation: blink-animation 1s steps(1, start) infinite;
+    -webkit-animation: blink-animation 1s steps(1, start) infinite;
+    color: #FF0000; /* Bright red blink */
+    font-weight: bold;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
     }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* Marquee Effect (for headlines or important notices) */
+/* You would need to add <marquee> tags in your HTML */
+marquee {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 18px;
+    color: #0000FF; /* Blue marquee text */
+    padding: 5px 0;
+    background-color: #FFFF00; /* Yellow background for marquee */
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+}
+
+/* Add a background GIF */
+/* You would change body background to something like:
+   body { background-image: url('your-animated-gif.gif'); background-repeat: repeat; }
+   I've included a subtle stipple above, but for a true 90s feel, a busy GIF background is key.
+*/
+
+/* --- Mobile responsiveness for 90s Style (but still functional) --- */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%; /* Allow it to be a bit wider on smaller screens */
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    header h1 { font-size: 24px; }
+    header .tagline { font-size: 12px; }
 
     nav ul {
-        flex-direction: column;
-        gap: 1rem;
+        padding-left: 5px;
+        text-align: center; /* Center nav for mobile */
+    }
+    nav ul li {
+        display: block; /* Stack nav items */
+        margin: 5px 0;
+        border-right: none; /* No vertical separators on stacked nav */
+        padding-right: 0;
+    }
+    nav ul li a {
+        font-size: 14px;
     }
 
-    .hero, .careers-hero, .about-hero, .contact-intro {
-        padding: 2rem 1rem;
+    .hero, .careers-hero, .about-hero, .contact-intro { padding: 15px 10px; }
+    .hero h2, .careers-hero h2, .about-hero h2, .contact-intro h2 { font-size: 18px; }
+    .hero p, .careers-hero p, .about-hero p, .contact-intro p { font-size: 13px; }
+
+    .cta-button, button[type="submit"] { padding: 5px 10px; font-size: 12px; }
+
+    h3 { font-size: 16px; text-align: center; /* Center headings on mobile */ }
+    p { font-size: 13px; }
+
+    .menu-item, .job, .step, .value-card, .team-member, .milestone, .faq-item, .testimonial {
+        padding: 8px;
+        margin-bottom: 8px;
     }
 
-    .hero h2, .careers-hero h2, .about-hero h2, .contact-intro h2 {
-        font-size: 1.8rem;
-    }
-
-    .contact-methods, .story-content, .facility-content {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-items, .job-listings, .process-steps, .values-grid, .team-members, .milestones-list {
-        grid-template-columns: 1fr;
-    }
-
-    .story-image, .facility-image {
-        height: 200px;
-    }
+    .menu-item img { height: 80px; }
+    .team-photo { width: 60px; height: 60px; }
+    .map iframe { height: 150px; }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: 20px;
     }
+    header .tagline { font-size: 10px; }
+    
+    .hero h2, .careers-hero h2, .about-hero h2, .contact-intro h2 { font-size: 16px; }
+    .cta-button, button[type="submit"] { padding: 4px 8px; font-size: 11px; }
+    
+    footer p { font-size: 11px; }
+    .social-links a { font-size: 11px; margin: 0 5px; }
 
-    .hero h2, .careers-hero h2, .about-hero h2, .contact-intro h2 {
-        font-size: 1.5rem;
+    /* Even tighter spacing for very small screens */
+    .container {
+        padding: 5px;
     }
-
-    .cta-button, button[type="submit"] {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+    main {
+        padding: 10px 5px;
     }
 }

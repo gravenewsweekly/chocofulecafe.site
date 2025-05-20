@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - ChocoFuel Café</title>
+    <meta name="description" content="Learn about ChocoFuel Café in Indore, Madhya Pradesh, founded by Daksh Hande. Discover our passion for artisanal chocolates, sustainable practices, and innovative flavors. Opening late 2025.">
+    <meta name="keywords" content="ChocoFuel Café about, artisanal chocolate Indore, Daksh Hande, sustainable café, Vijay Nagar café, chocolate tasting Indore, Indian chocolate culture">
+    <meta name="author" content="ChocoFuel Café">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="About ChocoFuel Café - Indore’s Artisanal Chocolate Destination">
+    <meta property="og:description" content="Discover the story of ChocoFuel Café in Vijay Nagar, Indore, founded by Daksh Hande. Learn about our sustainable practices and innovative chocolate creations. Opening late 2025.">
+    <meta property="og:image" content="https://www.chocofuelcafe.site/images/about-og-image.jpg">
+    <meta property="og:url" content="https://www.chocofuelcafe.site/about.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About ChocoFuel Café - Indore">
+    <meta name="twitter:description" content="Learn about ChocoFuel Café’s mission to elevate chocolate culture in Indore with sustainable, artisanal creations. Opening in Vijay Nagar, late 2025.">
+    <meta name="twitter:image" content="https://www.chocofuelcafe.site/images/about-twitter-image.jpg">
+    <title>About Us - ChocoFuel Café | Indore’s Premier Chocolate Experience</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "ChocoFuel Café",
+        "description": "ChocoFuel Café, founded by Daksh Hande, is Indore’s premier destination for artisanal chocolates and innovative beverages. Opening in Vijay Nagar, Indore in late 2025.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#45, 56 Main Road, Vijay Nagar",
+            "addressLocality": "Indore",
+            "addressRegion": "Madhya Pradesh",
+            "postalCode": "452010",
+            "addressCountry": "IN"
+        },
+        "founder": [
+            {
+                "@type": "Person",
+                "name": "Daksh Hande",
+                "jobTitle": "Founder & Master Chocolatier",
+                "email": "daksh@chocofuelcafe.site",
+                "telephone": "+91 8103356828"
+            },
+            {
+                "@type": "Person",
+                "name": "Aayush Patil",
+                "jobTitle": "Co-Founder & Head of Operations"
+            }
+        ],
+        "openingHours": "Mo-Su 08:00-22:00",
+        "servesCuisine": "Chocolate, Coffee, Desserts",
+        "url": "https://www.chocofuelcafe.site/about.html",
+        "image": "https://www.chocofuelcafe.site/images/cafe-interior.jpg",
+        "telephone": "+91 8103356828",
+        "email": "contact@chocofuelcafe.site"
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -12,10 +63,10 @@
             <h1>ChocoFuel Café</h1>
             <p class="tagline">Where Chocolate Meets Energy</p>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" aria-current="page">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="careers.html">Careers</a></li>
@@ -26,88 +77,98 @@
     <main class="container">
         <section class="about-hero">
             <h2>Our Chocolate Journey</h2>
-            <p>Discover the passion behind every cup and bite at ChocoFuel Café</p>
+            <p>Join us in Vijay Nagar, Indore, as we redefine chocolate culture with passion, sustainability, and innovation. Opening late 2025.</p>
+            <a href="contact.html" class="cta-button" aria-label="Join our mailing list for updates">Join Our Mailing List</a>
         </section>
 
-        <section class="our-story">
+        <section class="our-story" id="our-story">
             <h3>How It All Began</h3>
             <div class="story-content">
                 <div class="story-text">
-                    <p>Founded in 2025 by master chocolatier Daksh Hande, ChocoFuel Café was born from a simple idea: to create a space where chocolate isn't just a treat, but an experience.</p>
-                    <p>After spending few months apprenticing with previous business venture experience and customer service experience , Daksh came up with a mission to elevate chocolate culture in Indore.</p>
-                    <p>Our flagship store in Vijay Nagar is the realization of this dream - a place where traditional Indian techniques meet Indian flavors.</p>
+                    <p>Founded in 2025 by master chocolatier <strong>Daksh Hande</strong>, ChocoFuel Café is more than a café—it’s a celebration of chocolate’s rich heritage. With a background in the aviation and hospitality industries, Daksh combined his customer service expertise and entrepreneurial spirit to create a unique chocolate experience in Indore, Madhya Pradesh.</p>
+                    <p>Our vision is to blend traditional Indian flavors with global chocolate craftsmanship. From sourcing single-origin cocoa beans to hosting immersive tasting workshops, ChocoFuel Café is dedicated to elevating chocolate culture in India.</p>
+                    <p>Our flagship store in Vijay Nagar, Indore, opening in late 2025, is designed to be a haven for chocolate lovers, offering handcrafted chocolates, innovative beverages, and a warm, welcoming ambiance.</p>
                 </div>
-                <img src="cafe-interior.jpg" alt="ChocoFuel Café interior" class="story-image">
+                <img src="images/cafe-interior.jpg" alt="Interior of ChocoFuel Café in Vijay Nagar, Indore" class="story-image" loading="lazy">
             </div>
         </section>
 
-        <section class="our-values">
+        <section class="our-values" id="our-values">
             <h3>Our Core Values</h3>
+            <p>At ChocoFuel Café, our values guide everything we do, from sourcing ingredients to serving our community.</p>
             <div class="values-grid">
                 <div class="value-card">
                     <h4>Quality First</h4>
-                    <p>We source only premium single-origin cocoa beans and use 100% cocoa butter in all our products</p>
+                    <p>We use premium single-origin cocoa beans from Ghana, Venezuela, and Madagascar, crafted with 100% cocoa butter for unmatched flavor.</p>
                 </div>
                 <div class="value-card">
                     <h4>Sustainable Practices</h4>
-                    <p>From ethical sourcing to compostable packaging, we minimize our environmental impact</p>
+                    <p>From fair trade sourcing to eco-friendly, compostable packaging, we’re committed to minimizing our environmental footprint.</p>
                 </div>
                 <div class="value-card">
                     <h4>Innovation</h4>
-                    <p>Our menu features unique creations like masala hot chocolate and cardamom-infused truffles</p>
+                    <p>Our menu features bold creations like masala chai hot chocolate, cardamom-infused truffles, and vegan chocolate delights.</p>
                 </div>
                 <div class="value-card">
                     <h4>Community</h4>
-                    <p>We support local dairy farmers and collaborate with Indian pastry chefs</p>
+                    <p>We partner with local dairy farmers and Indian artisans to support Indore’s vibrant community and celebrate regional flavors.</p>
                 </div>
             </div>
         </section>
 
-        <section class="our-team">
+        <section class="our-team" id="our-team">
             <h3>Meet Our Founders</h3>
+            <p>Our leadership team brings passion, expertise, and a shared vision to ChocoFuel Café.</p>
             <div class="team-members">
                 <div class="team-member">
-                    <img src="rahul-sharma.jpg" alt="Rahul Sharma" class="team-photo">
+                    <img src="images/daksh-hande.jpg" alt="Daksh Hande, Founder and Master Chocolatier of ChocoFuel Café" class="team-photo" loading="lazy">
                     <h4>Daksh Hande</h4>
                     <p class="position">Founder & Master Chocolatier</p>
-                    <p class="bio">Have been in Aviation Industry and Hospitality industry, Have previous experience in customer service and business.</p>
+                    <p class="bio">With experience in aviation, hospitality, and customer service, Daksh Hande founded ChocoFuel Café to bring world-class chocolate experiences to Indore. His passion for ethical sourcing and innovative flavors drives our mission.</p>
+                    <p><a href="mailto:handedaksh@gmail.com" aria-label="Email Daksh Hande">daksh@chocofuelcafe.site</a></p>
                 </div>
                 <div class="team-member">
-                    <img src="priya-patel.jpg" alt="Priya Patel" class="team-photo">
-                    <h4>Aayush Patil</h4>
+                    <img src="images/aayush-patil.jpg" alt="Aayush Patil, Co-Founder and Head of Operations of ChocoFuel Café" class="team-photo" loading="lazy">
+                    <h4>Aayush Tiwari</h4>
                     <p class="position">Co-Founder & Head of Operations</p>
-                    <p class="bio">Former nescafé manager with expertise in creating memorable customer experiences.</p>
+                    <p class="bio">A former Nescafé manager, Aayush brings expertise in café operations and customer experience. His leadership ensures every visit to ChocoFuel Café is seamless and memorable.</p>
+                    <p><a href="mailto:aayush@chocofuelcafe.site" aria-label="Email Aayush Patil">aayush@chocofuelcafe.site</a></p>
                 </div>
             </div>
         </section>
 
-        <section class="our-facility">
+        <section class="our-facility" id="our-facility">
             <h3>Our Chocolate Lab</h3>
             <div class="facility-content">
-                <img src="chocolate-lab.jpg" alt="Our chocolate preparation facility" class="facility-image">
+                <img src="images/chocolate-lab.jpg" alt="ChocoFuel Café’s chocolate preparation lab in Indore" class="facility-image" loading="lazy">
                 <div class="facility-text">
-                    <p>At our in-house chocolate lab, we:</p>
+                    <p>Our state-of-the-art chocolate lab in Vijay Nagar, Indore, is where the magic happens. Here, we:</p>
                     <ul>
-                        <li>Hand-temper all our chocolate daily</li>
-                        <li>Create small-batch artisanal products</li>
-                        <li>Develop new recipes seasonally</li>
-                        <li>Host chocolate-making workshops</li>
+                        <li>Hand-temper premium chocolate daily for perfect texture and shine</li>
+                        <li>Craft small-batch artisanal products with seasonal ingredients</li>
+                        <li>Experiment with innovative recipes inspired by Indian and global flavors</li>
+                        <li>Host hands-on chocolate-making workshops for our community</li>
                     </ul>
-                    <p>Visit us to see the chocolate-making process firsthand!</p>
+                    <p>Join us for a behind-the-scenes tour or a workshop when we open in late 2025! <a href="contact.html" aria-label="Contact us to book a chocolate workshop">Contact us</a> to learn more.</p>
                 </div>
             </div>
         </section>
 
-        <section class="awards">
-            <h3>Recognitions</h3>
-            <div class="awards-list">
-                <div class="award">
-                    <img src="best-cafe-2024.png" alt="Best New Café 2024" class="award-logo">
-                    <p>Best New Café 2025 - Indore Food Awards</p>
+        <section class="milestones" id="milestones">
+            <h3>Our Milestones</h3>
+            <p>While we’re just beginning, we’re already making waves in Indore’s culinary scene.</p>
+            <div class="milestones-list">
+                <div class="milestone">
+                    <h4>2025: Founding of ChocoFuel Café</h4>
+                    <p>Established by Daksh Hande and Aayush Patil to bring artisanal chocolate to Indore.</p>
                 </div>
-                <div class="award">
-                    <img src="sustainable-business.png" alt="Sustainable Business Award" class="award-logo">
-                    <p>Sustainable Business Award 2025 - Green Indore Initiative</p>
+                <div class="milestone">
+                    <h4>Late 2025: Grand Opening</h4>
+                    <p>Our flagship store in Vijay Nagar, Indore, opens with a celebration of chocolate and community.</p>
+                </div>
+                <div class="milestone">
+                    <h4>Community Engagement</h4>
+                    <p>Launching chocolate tasting workshops and partnerships with local farmers.</p>
                 </div>
             </div>
         </section>
@@ -115,10 +176,16 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ChocoFuel Café. All Rights Reserved.</p>
-            <p>Registered Office: #45, 56th Main Road, Vijay Nagar, Indore - 452010</p>
-            <p>GSTIN: Upcoming</p>
+            <p>© 2025 ChocoFuel Café. All Rights Reserved.</p>
+            <p>Registered Office: #45, 56 Main Road, Vijay Nagar, Indore - 452010, Madhya Pradesh, India</p>
+            <p>GSTIN: Pending Registration</p>
             <p class="disclaimer">All product names, logos, and brands are property of their respective owners.</p>
+            <div class="social-links">
+                <p>Follow us:</p>
+                <a href="https://www.instagram.com/chocofuelcafe" target="_blank" rel="noopener" aria-label="Follow ChocoFuel Café on Instagram">Instagram</a> |
+                <a href="https://www.facebook.com/chocofuelcafe" target="_blank" rel="noopener" aria-label="Follow ChocoFuel Café on Facebook">Facebook</a> |
+                <a href="https://www.twitter.com/chocofuelcafe" target="_blank" rel="noopener" aria-label="Follow ChocoFuel Café on Twitter">Twitter</a>
+            </div>
         </div>
     </footer>
 </body>
